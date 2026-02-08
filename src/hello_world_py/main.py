@@ -8,7 +8,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    greeting = os.environ.get("GREETING", "Hello")
+    greeting = os.environ.get("GREETING", "Aloha")
     return {
         "message": f"{greeting} from metasync/hello-world-py!",
         "python_version": sys.version,
